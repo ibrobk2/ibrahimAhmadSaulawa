@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <div class="container">
+        <h3>Registration Form</h3>
+        <i class="fa fa-user"></i>
+        <h4 id="error"></h4>
+        <form action="index.html" method="get">
+            <input type="text" placeholder="Enter Username" id="user"><br>
+            <input type="password" placeholder="Enter Password" id="pass"><br>
+            <br>
+            <input type="email" placeholder="Enter Email" id="email">
+            <input type="date" placeholder="Date of Birth"><br>
+            <label for="gender">Gender:</label>&nbsp;&nbsp;&nbsp; <br>
+            <label for="male" >Male&nbsp;</label><input type="radio" name="a" value="Male">
+        <label for="female">Female</label>&nbsp; <input type="radio" name="a" value="Female">
+
+        <label for="favColor">Favourite Color:</label>&nbsp;&nbsp;&nbsp; <br>
+            <label for="red" >Red&nbsp;</label><input type="checkbox" name="red" value="Red">
+        <label for="green">Green</label>&nbsp; <input type="checkbox" name="green" value="Green">
+            <button onclick="register();" ><i class="fa fa-lock">&nbsp;&nbsp;</i><a href="#" id="link">Register</a></button>
+        </form>
+    </div>
+</body>
+</html>
